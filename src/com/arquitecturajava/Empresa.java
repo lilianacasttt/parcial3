@@ -7,28 +7,29 @@ public class Empresa {
 	 private String Razon;
 	 private String Direccion;
 	 private String Telefono;
+	 private String Telefono1;
 	 private static Empresa miempresa;
-	 
-	 public static Empresa getEmpresa(String Nit,String Nombre,String Razon,String Direccion, String Telefono) 
+
+	 public static Empresa getEmpresa(String Nit,String Nombre,String Razon,String Direccion, String Telefono,String Telefono1)
 	 {
-	 
-	 if (miempresa==null) 
+
+	 if (miempresa==null)
 	 {
-	 
+
 	 miempresa=new Empresa(Nit, Nombre, Razon, Direccion, Telefono);
 	 }
 	 return miempresa;
 	 }
-	 
+
 	 private Empresa(String Nit,String Nombre,String Razon,String Direccion, String Telefono)
 	 {
-	 
+
 	 this.Nit=Nit;
 	 this.Nombre=Nombre;
 	 this.Razon=Razon;
 	 this.Direccion=Direccion;
 	 this.Telefono=Telefono;
-	 
+
 	 }
 
 	public String getNit() {
